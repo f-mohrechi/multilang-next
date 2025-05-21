@@ -1,37 +1,33 @@
 "use client";
+
 import { Select } from "antd";
-import { usePathname, useRouter } from "@/i18n/navigation";
-import { Locale, routing } from "@/i18n/routing";
-import { useParams } from "next/navigation";
-import { ReactNode } from "react";
+import { useRouter, usePathname } from "@/i18n/navigation";
+import { useLocale } from "next-intl";
 
 const languages = [
-  { value: "en", label: "En" },
-  { value: "kr", label: "Kr" },
+  { value: "en", label: "English" },
+  { value: "kr", label: "Korean" },
 ];
 
-const LocaleSwitcherSelect = ({ defaultValue, label }) => {
+const LocaleSwitcherSelect = () => {
   const router = useRouter();
-
   const pathname = usePathname();
-  const params = useParams();
+  const locale = useLocale();
 
-  function onSelectChange(nextLocale) {
-    router.replace({ pathname, params }, { locale: nextLocale });
-  }
+  const handleChange = (nextLocale) => {
+    router.replace({ pathname }, { locale: nextLocale });
+  };
 
   return (
     <Select
-      value={defaultValue}
-      variant="borderless"
-      onChange={onSelectChange}
-      style={{ width: "100%", maxWidth: "120px" }}
-      options={routing.locales.map(({ value, label }) => ({
-        //   options={languages.map(({ value, label, flag }) => ({
+      value={locale}
+      onChange={handleChange}
+      style={{ width: 150 }}
+      options={languages.map(({ value, label }) => ({
         value,
         label: (
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            {/* <img src={flag} alt={label} width="20" /> */}
+            
             {label}
           </div>
         ),
