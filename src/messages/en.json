@@ -2,7 +2,25 @@
   "HomePage": {
     "hero_title": "Your Infrastructure Your Control",
     "hero_text": "Enterprise VMs, apps, and security. All In One Platform",
-    "hero_button": "Contact Sales"
+    "hero_button": "Contact Sales",
+    "title_1": "Power Every Layer of Your Cloud",
+    "text_1": "DanaIX does the heavy lifting of infrastructure management, so you can deploy, scale, and secure your workloads with confidence.",
+    "layers": {
+      "title_1": "Compute",
+      "text_1": "Run and manage virtual machines with full control.",
+      "title_2": "Network",
+      "text_2": "Fast, scalable connections and load balancing.",
+      "title_3": "Storage & Backup",
+      "text_3": "Secure, scalable storage with fast recovery options.",
+      "title_4": "Core Security & Monitoring",
+      "text_4": "Firewall, insights, and threat protection.",
+      "item_1": "IXFlow",
+      "item_2": "IXBalancer",
+      "item_3": "IXTunnel",
+      "item_4": "IXSecureConnect",
+      "item_5": "IX IP",
+      "item_6": "IX DNS"
+    }
   },
 
   "Header": {
