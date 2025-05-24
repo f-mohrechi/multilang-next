@@ -5,7 +5,7 @@ export default function LocaleSwitcher() {
   const locale = useLocale();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="">
       <LocaleSwitcherSelect defaultValue={locale} />
     </div>
   );

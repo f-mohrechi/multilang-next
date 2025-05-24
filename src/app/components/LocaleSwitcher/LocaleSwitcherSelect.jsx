@@ -3,6 +3,7 @@
 import { Select } from "antd";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
+import WorldIcon from "./../../../../public/icons/world.svg";
 
 const languages = [
   { value: "en", label: "English" },
@@ -22,13 +23,15 @@ const LocaleSwitcherSelect = () => {
     <Select
       value={locale}
       onChange={handleChange}
-      style={{ width: 150 }}
+      variant="borderless"
+      suffixIcon={<WorldIcon />}
+      style={{ width: 65 }}
+      placement="bottomLeft"
       options={languages.map(({ value, label }) => ({
         value,
         label: (
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            
-            {label}
+            {value}
           </div>
         ),
       }))}

@@ -2,5 +2,28 @@
   "HomePage": {
     "title": "korean Hello world!",
     "about": "korean Go to the about page"
+  },
+
+  "Header": {
+    "products": "Products",
+    "marketplace": "Marketplace",
+    "solutions": "Solutions",
+    "support": "Support",
+    "company": "Company",
+    "partners": "Partners",
+    "compute": "Compute",
+    "network": "Network",
+    "storage_and_backup": "Storage & Backup",
+    "security_and_monitoring": "Security & Monitoring",
+    "ix_flow": "IXFlow",
+    "ix_balancer": "IXBalancer",
+    "ix_tunnel": "IXTunnel",
+    "ix_secure_connect": "IXSecureConnect",
+    "ix_ip": "IX IP",
+    "ix_dns": "IX DNS",
+    "about": "About US",
+    "contact": "Contact Us",
+    "careers": "Careers",
+    "contact_sales": "Contact Sales"
   }
 }
