@@ -1,7 +1,8 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "hero_title": "Your Infrastructure Your Control",
+    "hero_text": "Enterprise VMs, apps, and security. All In One Platform",
+    "hero_button": "Contact Sales"
   },
 
   "Header": {
